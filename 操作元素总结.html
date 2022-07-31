@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.世纪佳缘 用户名文本框 显示隐藏内容 */
+     /* .usname {
+         border: 1px solid #d9d9d9;
+         color: #aaa;
+         outline: none;
+     } */
+    
+     /* 2.京东关闭广告(当前直接隐藏即可)
+     .box {
+         position: relative;
+         height: 100px;
+         background-color: aquamarine;
+     }
+     .box-btn {
+         position: absolute;
+         top: 10px;
+         right: 80px;
+         width: 15px;
+         height: 15px;
+         background-color: rgba(0, 0, 0, .2);
+         line-height: 14px;
+         text-align: center;
+         font-size: 14px;
+         color: #fff;
+     } */
+     
+     /* 3..新浪下拉菜单（微博）
+     ul {
+         list-style: none;
+     }
+     .box {
+         position: relative;
+         width: 75px;
+         height: 41px;
+         margin: 100px auto;
+     }
+     .box ul {
+         display: none;
+         position: absolute;
+         top: 26px;
+         left: -40px;
+     }
+     .box h4 {
+         height: 41px;
+         font-weight: 400;
+         line-height: 41px;
+         text-align: center;
+         border: 1px solid pink;
+     }
+     .box li {
+         width: 73px;
+         height: 30px;
+         border: 1px solid #ccc;
+         line-height: 30px;
+         text-align: center;
+     }
+     .box li:nth-child(2) {
+         border-top: 0;
+         border-bottom: 0;
+     } */
+
+    </style>
+</head>
+<body>
+    <!-- 1.世纪佳缘 用户名文本框 显示隐藏内容 -->
+    <!-- <input type="text" value="邮箱/ID/手机号" class="usname"> -->
+
+    <!-- 2.京东关闭广告(当前直接隐藏即可)
+    <div class="box">
+        <i class="box-btn">X</i>
+    </div> -->
+
+    <!-- //3.新浪下拉菜单（微博） -->
+    <!-- <div class="box">
+        <h4>微博</h4>
+        <ul>
+            <li>私信</li>
+            <li>评论</li>
+            <li>@我</li>
+        </ul>
+    </div> -->
+
+    <!-- 4.开关灯 -->
+    <button id="btn">开关灯</button>
+    <script>
+        // // 1.世纪佳缘 用户名文本框 显示隐藏内容
+        // var usname = document.querySelector('.usname');
+        // usname.onfocus = function() {
+        //     // console.log('点击了');
+        //     this.style.borderColor = 'pink';
+        //     if (this.value === '邮箱/ID/手机号') {
+        //         this.value = '';
+        //     }
+        // }
+        // usname.onblur = function() {
+        //     if (this.value === '') {
+        //         this.value = '邮箱/ID/手机号';
+        //     }
+        // }
+        
+        // // 2.京东关闭广告(当前直接隐藏即可)
+        // var btn = document.querySelector('.box-btn');
+        // var box = document.querySelector('.box');
+        // btn.onclick = function() {
+        //     box.style.display = 'none';
+        // }
+        
+        // //3.新浪下拉菜单（微博）
+        // var h = document.querySelector('h4');
+        // var lis = document.querySelector('ul');
+        // h.onmouseover = function() {
+        //     lis.style.display = 'block';
+        // }
+        // h.onmouseout = function() {
+        //     lis.style.display = 'none';
+        // }
+        
+        // 4.开关灯
+        var btn = document.getElementById('btn');
+        var flag = 0;
+        btn.onclick = function() {
+            if (flag == 0) {
+                document.body.style.backgroundColor = 'black';
+                flag = 1;
+            } else {
+                document.body.style.backgroundColor = '#fff';
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+</html>
